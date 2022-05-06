@@ -22,11 +22,11 @@ export class ServicioHabitacion{
         }
 
         async editar(id,datosPeticion){
-                return (await modeloHabitacion.findByIdAnUpdate(id,datosPeticion))
+                return (await modeloHabitacion.findByIdAndUpdate(id,datosPeticion))
         }
 
         async eliminar(id){
-                return(await modeloHabitacion.findByIdAnDelete(id))
+                return(await modeloHabitacion.findByIdAndDelete(id))
         }
 
 }
