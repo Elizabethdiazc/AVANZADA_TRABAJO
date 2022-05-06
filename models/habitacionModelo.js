@@ -18,12 +18,13 @@ let Habitacion=new Schema({
 
     numeroPersonas:{
         type:Number,
+        required:true
        
     },
 
     foto:{
         type:String,
-        required:truesx
+        required:true
 
     }
 })
