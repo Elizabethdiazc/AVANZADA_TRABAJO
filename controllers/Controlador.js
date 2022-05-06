@@ -70,7 +70,7 @@ export class Controlador{
         }catch(error){
     
             response.status(400).json({
-                mensaje:"upss",
+                mensaje:"upss"+error,
                 data:[],
                 estado:false
             })
