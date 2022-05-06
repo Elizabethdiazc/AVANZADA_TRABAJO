@@ -57,6 +57,13 @@ export class Controlador{
         let datosPeticion=request.body
         console.log(datosPeticion)
 
+        //logica de las fechas 
+        let fecha1 = new Date('2016/08/12');
+        let fecha2 = new Date()
+
+            let resta = fecha2.getTime() - fecha1.getTime()
+            console.log(Math.round(resta/ (1000*60*60*24)))
+
         let servicio=new ServicioHabitacion() //Se instacia la clase SERVICIO
     
         try{
