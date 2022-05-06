@@ -12,7 +12,7 @@ export class ServicioHabitacion{
         }
 
         async buscarPorId(id){
-            let habitacion=await modeloHabitacion.findByid(id)
+            let habitacion=await modeloHabitacion.findById(id)
             return habitacion
         }
 
